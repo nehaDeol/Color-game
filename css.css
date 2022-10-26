@@ -1,0 +1,109 @@
+body {
+    /*background-color: black*/
+    background-color: #232323;
+    margin: 0;
+    /*This sets the font for everything*/
+    font-family: "Montserrat", "Avenir";
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    /*Normally h1 is bolded. lets lighten that up a bit*/
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    background-color: steelblue;
+    /*Get rid of gaps between H1 and everything else*/
+    margin: 0;
+    /*padding top and bottom only*/
+    padding: 2% 0;
+}
+
+#rgbGuess {
+    /*double the h1 size*/
+    font-size: 200%;
+}
+
+#messagebar {
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+#message {
+    /*color:white;*/
+    /*height: 20px;*/
+    /*padding-bottom:0px;*/
+    /*margin: 0 20%;*/
+    display: inline-block;
+    width: 20%;
+}
+
+#container {
+    width: 60%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.square {
+    width: 30%;
+    margin: 1.66%;
+    /*If you dont put something in a div, it does not show up.
+      setting the padding causes it to 'form'*/
+    padding-bottom: 30%;
+    float: left;
+    
+    /*lets round the corners*/
+    border-radius:15%;
+    
+    /*animate just the background color changes*/
+    transition: background 0.6s;
+    /*Note: Transition property is not built into every browser yet
+        so we should add the following
+    */
+    -moz-transition: background 0.6s;
+    -webkit-transition: background 0.6s; 
+}
+
+.squareReset {
+    background-color: #232323
+}
+
+.selected {
+    color:white;
+    background: steelblue;
+}
+
+button {
+    /*get rid of border*/
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    /*make sure it goes from top to bottom of div container*/
+    height: 100%;
+    font-size: inherit;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    /*Get rid of annoying outline*/
+    outline: none;
+    
+    /*This is how to animate a transition (fade in/out)
+    this is how we tell css to animate property changes
+    'all' animates every property. 
+    */
+    transition: all .5s;
+    
+    /*Note: Transition property is not built into every browser yet
+        so we should add the following
+    */
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+button:hover {
+    color:white;
+    background: steelblue;
+}
+    
