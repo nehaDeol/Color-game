@@ -1,6 +1,6 @@
 body {
     /*background-color: black*/
-    background-color: #232323;
+    background-color: #89c7e6;
     margin: 0;
     /*This sets the font for everything*/
     font-family: "Montserrat", "Avenir";
@@ -13,7 +13,7 @@ h1 {
     font-weight: normal;
     text-transform: uppercase;
     line-height: 1.1;
-    background-color: steelblue;
+    background-color: rgb(128, 234, 126);
     /*Get rid of gaps between H1 and everything else*/
     margin: 0;
     /*padding top and bottom only*/
@@ -29,7 +29,7 @@ h1 {
     height: 30px;
     background-color: white;
     text-align: center;
-    color: black;
+    color: #57a33e;
 }
 
 #message {
@@ -45,10 +45,11 @@ h1 {
     width: 60%;
     max-width: 600px;
     margin: 20px auto;
+    
 }
 .square {
     width: 30%;
-    margin: 1.66%;
+    margin: 1.22%;
     /*If you dont put something in a div, it does not show up.
       setting the padding causes it to 'form'*/
     padding-bottom: 30%;
@@ -56,6 +57,7 @@ h1 {
     
     /*lets round the corners*/
     border-radius:15%;
+    border: 2px solid white;
     
     /*animate just the background color changes*/
     transition: background 0.6s;
@@ -72,7 +74,7 @@ h1 {
 
 .selected {
     color:white;
-    background: steelblue;
+    background: #57a33e;
 }
 
 button {
@@ -84,7 +86,7 @@ button {
     height: 100%;
     font-size: inherit;
     font-weight: 700;
-    color: steelblue;
+    color: #57a33e;
     letter-spacing: 1px;
     /*Get rid of annoying outline*/
     outline: none;
